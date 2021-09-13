@@ -509,4 +509,8 @@ button {
 .hidden {
   display: none;
 }
+
+.header__logo{
+  width:200px;
+}
 /*# sourceMappingURL=style.css.map */
