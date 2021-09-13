@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>封鎖された家庭科室からの脱出 │ Project N</title>
+  <title>爆弾魔からの挑戦状 │ Project N</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -33,14 +33,14 @@
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
-            <p class="text-center">まずは、この学校の家庭科室の鍵のありかを知らなければ入ることができない。<br>
-              下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>爆弾の場所はどこ？</h2>
+            <p class="text-center">爆弾を解除するために、まずは爆弾の場所を特定しなければならない。<br>
+              John Doeから届いた爆破予告に書かれた謎を元に爆弾のありかを警察に伝えよう！</p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
   
             <div class="container">
               <figure class="image__container">
-                <img src="assets/images/stage.png" alt="">
+                <img src="assets/images/yokoku.png" alt="">
               </figure>
                 
  <!--  YouTube貼り付け
@@ -59,7 +59,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>爆破場所はどこ？</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -85,9 +85,8 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <div class="clear-message__content">爆破される場所が特定できた。場所は警視庁だ！<br>
+                </div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -106,10 +105,13 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</h2>
+              <p class="text-center">メールについていた謎を解き終わり、爆弾の場所がわかった。<br>
+                しかし「私」のPCはJohn Doeに仕込まれたであろうウイルスにかかってしまい、<br>
+                警察に爆破物の場所を伝えることができなくなってしまった。<br>
+                どうやら警察から送られてきたメールにウイルスが仕込まれていたようだ。<br>
+                ウイルスを解除して警察とコンタクトがとれるようにしなくては。
+                </p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -130,7 +132,7 @@ Youtube貼り付けここまで -->
                 <div class="column">
                   <!-- STAGE2-1問題セクション　ここから -->
                   <figure class="image__container">
-                    <img src="assets/images/stage.png" alt="">
+                    <img src="assets/images/virus.png" alt="">
                   </figure>
                   <!-- STAGE2-1問題セクション　ここまで -->
                   <!-- STAGE2-1解答入力セクション　ここから -->
@@ -181,7 +183,7 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
+              <div class="clear-message__content">無事PCのウイルスを解除し、警察と連絡が取れるようになった。<br>
                 次のステージの謎を解こう！</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
@@ -197,12 +199,22 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>家庭科室の課題とは</h2>
-            <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
-              どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
-              これらを解決するための最後の謎を解いていこう！</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>爆弾解除！！</h2>
+            <p class="text-center">
+              無事、爆発物の場所を特定し、依頼を達成して一息ついていると、今度は警察から電話があった。<br>
+              警察官は焦った様子で今の状況を説明してくれた。</p>
+            <div class="story__note__outer bg-color--gray">
+              <ul class="story__note">
+                「警視庁を捜索したところ、地下駐車場から爆弾が見つかった。<br>
+                爆弾にはタイマーと謎がついていて、爆弾のタイマーを止めるには謎を解くしかない。」
+              </ul>
+            </div>
+            <p class="text-center">
+              タイマーは残り10分。<br>
+              爆弾につけられた謎を解いて、爆弾を解除しよう！
+            </p>
             <figure class="image__container">
-              <img src="assets/images/stage.png" alt="">
+              <img src="assets/images/password.png" alt="">
             </figure>
           </div>
         </section>
@@ -276,7 +288,8 @@ STAGE3-3追加　ここまで -->
     <div class="container">
         <p class="text-center">授業主催： N・S高<br>協力：株式会社SCRAP<br>企画制作：N・S高生</p>
         <p class="text-center">「リアル脱出ゲーム」は株式会社SCRAPの登録商標です。</p>
-        <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
+        <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>
+          生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
     </div>
   </footer>
   <script src="https://unpkg.com/vue@next"></script>
