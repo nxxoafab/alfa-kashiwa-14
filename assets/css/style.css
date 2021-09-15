@@ -517,4 +517,11 @@ button {
 .image__hint2{
  width:100%; 
 }
+
+.card__content__commentary{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
 /*# sourceMappingURL=style.css.map */
